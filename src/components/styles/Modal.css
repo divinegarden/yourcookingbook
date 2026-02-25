@@ -1,0 +1,19 @@
+dialog{
+    background-color: var(--headerNfooter);
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+dialog div{
+    background-color: var(--decoration);
+    padding: 10px;
+    border-radius: 100px;
+
+    color: var(--generalText)
+}

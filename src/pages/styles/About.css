@@ -1,0 +1,52 @@
+.about{
+    background-color: var(--decoration);
+    padding: 25px 40px;
+    border: 3px solid var(--details);
+    border-radius: 75px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h1{
+    font-family: "Agbalumo", sans-serif;
+    color: var(--btn);
+    font-size: 4em;
+
+    transition: .3s ease-in;
+}
+
+.about h1:hover{
+    color: var(--btnHover);
+}
+
+.about p{
+    color: var(--generalText);
+}
+
+.about nav{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.about a{
+    background-color: var(--btn);
+    padding: 5px 15px;
+    border-radius: 20px;
+
+    color: var(--generalText);
+    text-decoration: none;
+
+    transition: .3s ease-in;
+}
+
+.about a:hover{
+    background-color: var(--btnHover);
+    font-weight: 600;
+}
+
+.about img{
+    width: 300px;
+}

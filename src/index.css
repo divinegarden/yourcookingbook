@@ -1,0 +1,77 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Quicksand:wght@300..700&display=swap');
+
+/* Colors & Images */
+
+:root {
+    /* Body */
+    --headerNfooter: #ffc4d2;
+    --details: #ffe0eb;
+    --decoration: #ffffff;
+    --generalText: #70344a;
+    --btn: #fff0c2;
+    --btnHover: #ffe594;
+    --btnBorder: #b8a25f;
+    
+    /* Text */
+    --dBrown: #3f3b36;
+    --brown: #786957;
+    --lBrown: #bfa17c;
+
+    /* Images */
+    --banner: url('/images/lightmode/banner.png');
+    --backgrounddeco: url('/images/lightmode/background.png');
+}
+
+/* Cursors */
+
+* {
+    cursor: url('https://cdn.cursors-4u.net/previews/oxygen-cherry-5eda5de9-32.webp') 32 32, auto !important;
+}
+
+button:hover, a:hover, select:hover, summary:hover, dialog div:hover{
+    cursor: url('https://cdn.cursors-4u.net/previews/oxygen-cherry-hand-d8d991ef-32.webp') 39 33, auto !important;
+}
+
+input:hover, textarea:hover{
+    cursor: url('https://cdn.cursors-4u.net/previews/oxygen-cherry-text-dd635201-32.webp') 36 41, auto !important;
+}
+
+/* Modo oscuro */
+.dark {
+    /* Body */
+    --headerNfooter: #47021a;
+    --details: #7d042e;
+    --decoration: #1d020c;
+    --generalText: #f3f3f3;
+    --btn: #375e3d;
+    --btnHover: #254429;
+    --btnBorder: #18351b;
+
+    /* Text */
+    --dBrown: #bfa17c;
+    --lBrown: #3f3b36;
+
+    /* Images */
+    --banner: url('/images/darkmode/banner.png');
+    --backgrounddeco: url('/images/darkmode/background.png');
+}
+
+.dark * {
+    cursor: url('https://cdn.cursors-4u.net/previews/oxygen-black-7057c7a9-32.webp') 32 32, auto !important;
+}
+
+.dark button:hover, .dark a:hover, .dark select:hover, .dark summary:hover, .dark dialog div:hover{
+    cursor: url('https://cdn.cursors-4u.net/previews/oxygen-black-hand-b9b047ca-32.webp') 39 33, auto !important;
+}
+
+.dark input:hover, .dark textarea:hover{
+    cursor: url('https://cdn.cursors-4u.net/previews/oxygen-black-text-937e1b8e-32.webp') 36 41, auto !important;
+}
+
+html{
+    scroll-behavior: smooth;
+
+    scrollbar-color: var(--headerNfooter) var(--details);
+}
+

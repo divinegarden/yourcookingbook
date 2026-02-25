@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling / Main */
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+
+    background-image: var(--backgrounddeco);
+    background-size: cover;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--brown);
+}
+
+/* Header & Footer */
+.banner{
+    background-image: var(--banner);
+    background-position: 0 bottom;
+    background-size: 70%;
+    background-repeat: repeat-x;
+
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: backgroundmovement 15s linear infinite;
+}
+
+.banner img{
+    width: 200px;
+}
+
+.bar, footer{
+    background-color: var(--headerNfooter);
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.bar {
+    justify-content: space-between;
+}
+
+.bar button{
+    width: 75px;
+}
+
+.bar nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+footer {
+    flex-direction: column;
+    
+    color: white;
+}
+
+footer a{
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+
+    color: var(--dBrown);
+    text-decoration: none;
+
+    transition: .3s ease-in;
+}
+
+footer a:hover{
+    color: var(--headerNfooter);
+    font-weight: 600;
+}
+
+.bar a, .bar button {
+    background-color: var(--btn);
+    padding: 8px 20px;
+    border: 5px solid white;
+    border-radius: 50px;
+
+    font-family: "Agbalumo", sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: .3s ease-in;
+}
+
+.bar a:hover, .bar button:hover {
+    background-color: var(--btnHover);
+}
+
+@media screen and (width <= 800px) {
+    .bar {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .bar nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Body */
+main{
+    display: flex;
+}
+
+@media screen and (width <= 800px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+section{
+    margin: 20px;
+}
+
+
+/* Animación */
+
+@keyframes backgroundmovement {
+    from {
+        background-position: 0% bottom;
+    }
+    to {
+        background-position: 233% bottom;
+    }
+}

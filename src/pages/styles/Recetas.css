@@ -1,0 +1,21 @@
+.recetas{
+    width: 75%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    overflow-y: scroll;
+}
+
+@media screen and (width <= 800px) {
+    .recetas {
+        width: 100%;
+        height: fit-content;
+
+        align-items: center;
+
+        overflow-y: hidden;
+    }
+}

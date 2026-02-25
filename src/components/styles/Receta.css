@@ -1,0 +1,86 @@
+.receta{
+    background-color: var(--decoration);
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+    border: solid 1px var(--details);
+
+    text-align: center;
+}
+
+.receta hr{
+    margin: 30px;
+    border: solid 1px var(--details);
+}
+
+.receta h1{
+    font-family: "Agbalumo", sans-serif;
+    font-size: 350%;
+    color: var(--details);
+}
+
+.receta img{
+    width: 80%;
+    border-radius: inherit;
+}
+
+.receta .rating{
+    font-weight: 500;
+    font-size: 200%;
+    color: var(--btnHover);
+}
+
+.receta .guiaReceta, .receta .cocina{
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.receta .guiaReceta h3, .receta .cocina h3, .receta .porciones h3, .receta .informacion h3{
+    color: var(--headerNfooter);
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.receta summary{
+    color: var(--headerNfooter);
+}
+
+.receta .guiaReceta li, .receta .cocina p, .receta .porciones p{
+    color: var(--generalText);
+}
+
+.receta .guiaReceta li{
+    text-align: left;
+}
+
+.receta .informacion .info{
+    display: flex;
+    place-content: center;
+    gap: 25px;
+}
+
+.receta .informacion .info p{
+    background-color: var(--btn);
+    
+    padding: 10px 15px;
+    border-radius: 35px;
+    border: solid 1px var(--btnBorder);
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--generalText);
+}
+
+.receta .etiquetas{
+    color: var(--lBrown);
+}
+
+
+@media screen and (width <= 800px) {
+    .receta {
+        width: 90%;
+    }
+}

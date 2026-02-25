@@ -1,0 +1,60 @@
+.home{
+    background-color: var(--decoration);
+    padding: 25px 40px;
+    border: 3px solid var(--details);
+    border-radius: 75px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h1{
+    font-family: "Agbalumo", sans-serif;
+    color: var(--btn);
+    font-size: 4em;
+
+    transition: .3s ease-in;
+}
+
+.home h1:hover{
+    color: var(--btnHover);
+}
+
+.home p{
+    color: var(--generalText);
+}
+
+.home nav{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.home a{
+    background-color: var(--btn);
+    padding: 5px 15px;
+    border-radius: 20px;
+
+    color: var(--generalText);
+    text-decoration: none;
+
+    transition: .3s ease-in;
+}
+
+.home a:hover{
+    background-color: var(--btnHover);
+    font-weight: 600;
+}
+
+.home img{
+    width: 40%;
+}
+
+@media screen and (width <= 800px) {
+    .home nav{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
